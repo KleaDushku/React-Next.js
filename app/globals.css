@@ -19,6 +19,35 @@
   }
 }
 
+.hero {
+  @apply flex xl:flex-row flex-col gap-5 relative z-0 max-w-[1600px] mx-auto;
+}
+
+.hero__title {
+  @apply 2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold;
+}
+
+.hero__subtitle {
+  @apply text-[27px] text-indigo-900 font-light mt-5;
+}
+
+/* Zvogëlimi i madhësisë së `.hero__image-container` */
+.hero__image-container {
+  @apply xl:flex-[0.8] flex justify-end items-end w-full xl:h-[80vh];
+}
+
+.hero__image {
+  @apply relative xl:w-[80%] w-[70%] xl:h-[500px] h-[450px] z-0;
+}
+
+.hero__image-overlay {
+  @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4  bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
+}
+
+.custom-btn {
+  @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
